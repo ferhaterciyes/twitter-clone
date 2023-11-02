@@ -15,4 +15,4 @@ The project provides social media functionalities similar to Twitter, allowing u
 
 ## Canlıya Alma (Hosting)
 
-Bu proje canlı olarak şu adresten erişilebilir: [Twitter-Clone](twitter-clone38.netlify.app).
+Bu proje canlı olarak şu adresten erişilebilir: [Twitter-Clone](https://twitter-clone38.netlify.app/).
