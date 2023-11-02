@@ -1,6 +1,7 @@
-import Topics from "../../../components/topics"
+
 import Premium from "./premium"
 import Search from "./search"
+import Topics from './topics/index';
 
 const Rightbar = () => {
   return (

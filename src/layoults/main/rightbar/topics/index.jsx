@@ -1,4 +1,4 @@
-import { topics } from "../../utils/consts";
+import { topics } from "../../../../utils/consts";
 import Topic from "./topic";
 
 const Topics = () => {
