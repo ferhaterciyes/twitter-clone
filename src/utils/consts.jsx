@@ -207,3 +207,65 @@ export const mainmenu = [
     },
   },
 ];
+
+export const topics =[
+  {
+    "title": "Yeni Teknoloji Fuarı İstanbul'da Başlıyor",
+    "topic": {
+      "type": "query",
+      "value": "teknoloji"
+    }
+  },
+  {
+    "title": "Ülke Ekonomisinde Büyüme Gözleniyor",
+    "topic": {
+      "type": "tag",
+      "value": "ekonomi"
+    },
+    "postCount": 13366333
+  },
+  {
+    "title": "Yeni Sanat Sergisi Ankara Sanat Müzesi'nde Açıldı",
+    "topic": {
+      "type": "tag",
+      "value": "sanat"
+    }
+  },
+  {
+    "title": "Türkiye'de Yeni Eğitim Reformları Tartışılıyor",
+    "topic": {
+      "type": "query",
+      "value": "eğitim"
+    }
+  },
+  {
+    "title": "Yeni Teknoloji Ürünleri Fiyatları Düşürüldü",
+    "topic": {
+      "type": "query",
+      "value": "teknoloji"
+    }
+  },
+  {
+    "title": "Siyasi Gelişmeler Türkiye'de Gerginliği Artırıyor",
+    "topic": {
+      "type": "tag",
+      "value": "siyaset"
+    }
+  },
+  {
+    "title": "Bilim ve Teknoloji Konferansı İstanbul'da Düzenleniyor",
+    "topic": {
+      "type": "tag",
+      "value": "bilim"
+    },
+    "postCount": 452123113
+  },
+  {
+    "title": "Yeni Film Festivali İzmir'de Başlıyor",
+    "topic": {
+      "type": "tag",
+      "value": "sinema"
+    },
+    "postCount": 63221
+  }
+]
