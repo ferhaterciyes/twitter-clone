@@ -1,8 +1,18 @@
-# React + Vite
+# Twitter Clone React and Tailwind CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a Twitter clone built using React and Firebase.
 
-Currently, two official plugins are available:
+## Summary
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project provides social media functionalities similar to Twitter, allowing users to post tweets, like, and follow others through a Twitter-like interface.
+
+## Features
+
+- 
+-
+- 
+- 
+
+## Canlıya Alma (Hosting)
+
+Bu proje canlı olarak şu adresten erişilebilir: [Twitter-Clone](twitter-clone38.netlify.app).
