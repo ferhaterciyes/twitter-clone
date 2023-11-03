@@ -1,25 +1,43 @@
 import { createElement } from "react";
+import PropTypes from "prop-types";
 import classNames from "classnames";
-import  PropTypes  from "prop-types";
 
-const Buttons = ({children,size}) => {
-  return  createElement("button",{
-    className:classNames("bg-[#1d9bf0] text-white rounded-full flex items-center justify-center font-bold hover:bg-[#1a8cd8] transition-colors ",{
-        "px-4 h-9" :size ==="normal",
-        "px-4 h-[52px] w-full text-[17px]" :size ==="large",
+const Buttons = ({ as, children, size,className, variant , ...props }) => {
+  return createElement(
+    as,
+    {
+      type: "button",
+      className: classNames(
+        " rounded-full flex items-center justify-center font-bold  transition-colors ",
+        {
+          "px-4 h-8 text-sm": size === "small",
+          "px-4 h-9": size === "normal",
+          "px-4 h-[52px] w-full text-[17px]": size === "large",
+          " bg-[#1d9bf0] hover:bg-[#1a8cd8]": variant === "primary",
+          " bg-[#eff3f4] hover:bg-[#d7dbdc] text-black": variant === "white",
+          " border border-[#b4b4b4] hover:border-[#67070f] hover:bg-[#f4212e1a] hover:text-[#f4212e] ": variant === "white-outline",
+          [className]:true
 
-    })
-  },children)
-  
+        },
+      ),
+      ...props
+    },
+    children,
+  );
 };
- 
-Buttons.propTypes = {
-    size:PropTypes.oneOf(["normal","large"])
-}
 
-Buttons.defaultProps ={
-    size:"normal"
-}
+Buttons.propTypes = {
+  as: PropTypes.any,
+  size: PropTypes.oneOf(["normal", "large", "small"]),
+  variant: PropTypes.oneOf(["primary", "white","white-outline"]),
+  props:PropTypes.object,
+  className:PropTypes.string
+};
+
+Buttons.defaultProps = {
+  size: "normal",
+  variant: "primary",
+  as: "button",
+};
 
 export default Buttons;
- 

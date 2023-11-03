@@ -38,7 +38,7 @@ const ref =useRef()
           <button
           type="button"
           onClick={()=> setQuery("")}
-          className="w-[22px] h-[22px] rounded-full bg-[#1d9bf0] flex items-center justify-center text-black min-w-[22px] right-3 absolute top-1/2 -translate-y-1/2  ">
+          className="w-[22px] h-[22px] rounded-full bg-[color:var(--color-primary)] flex items-center justify-center text-black min-w-[22px] absolute top-1/2 -translate-y-1/2 right-3 ">
             <svg viewBox="0 0 15 15" width={10} height={10}>
               <path
                 fill=" currentColor"
@@ -50,8 +50,8 @@ const ref =useRef()
       </label>
       {focus && (
             <div
-            className="absolute w-[350px] top-full -translate-y-1 -left-px bg-black shadow-box  max-h-[calc(80vh-53px)] rounded-lg text-center min-h-[100px]">
-              <p className="p-3 pt-5  text-[#71767b] leading-5">Kişileri , listeleri ve anahtar kelimeleri aramayı dene  </p>
+            className="absolute w-[350px] top-full -left-px -translate-y-1 bg-[color:var(--background-primary)] shadow-box max-h-[calc(80vh-53px)] rounded-lg text-center min-h-[100px]">
+              <p className="p-3 pt-5 text-[color:var(--color-base-secondary)] leading-5">Kişileri , listeleri ve anahtar kelimeleri aramayı dene  </p>
                 
                 
           </div>
