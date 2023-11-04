@@ -50,17 +50,17 @@ const Footer = () => {
               d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z" />
             </svg>
           </Popover.Button>
-          <Popover.Panel className="grid w-[150px] rounded-xl max-w-[384px] shadow-box bg-black absolute bottom-0 right-0 overflow-hidden" >
-            <Link to="/" className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[#16181c] transition-colors">
+          <Popover.Panel className="grid w-[150px] rounded-xl max-w-[384px] shadow-box bg-[color:var(--backgraund-primary)] absolute bottom-0 right-0 overflow-hidden" >
+            <Link to="/" className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[color:var(--backgraund-secondary)] transition-colors">
             Hakkında
             </Link>
-            <Link to="/" className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[#16181c] transition-colors">
+            <Link to="/" className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[color:var(--backgraund-secondary)] transition-colors">
             Durum
             </Link>
-            <Link to="/" className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[#16181c] transition-colors">
+            <Link to="/" className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[color:var(--backgraund-secondary)] transition-colors">
             İşletmeler İçin X
             </Link>
-            <Link to="/" className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[#16181c] transition-colors">
+            <Link to="/" className="py-3 px-4 text-white text-[15px] leading-5 font-bold hover:bg-[color:var(--backgraund-secondary)] transition-colors">
            Geliştiriciler
             </Link>
           </Popover.Panel>
