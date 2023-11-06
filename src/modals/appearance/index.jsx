@@ -60,7 +60,7 @@ const AppearanceModal = ({ close }) => {
               Arka plan
             </h6>
 
-            <div className="py-1 px-3 gap-1 mb-3 grid grid-cols-3 bg-[color:var(--backgraund-secondary)] rounded-2xl">
+            <div className="py-2 px-4 gap-2 mb-3 grid grid-cols-3 bg-[color:var(--backgraund-secondary)] rounded-2xl">
               <button
                onClick={() => {
                 setColor({
@@ -104,7 +104,7 @@ const AppearanceModal = ({ close }) => {
                 className={classNames(
                   "h-16 px-5 bg-[#15202b] text-[#f7f9f9] font-bold border border-white/10 rounded",
                   {
-                    "!border-[color:var(--color-primary)]":
+                    "!border-[color:var(--color-primary)] !border-2":
                       backgraundColor.name === "dark",
                   },
                 )}
@@ -129,14 +129,16 @@ const AppearanceModal = ({ close }) => {
                     setBoxShadow('rgba(255, 255, 255, 0.2) 0px 0px 15px, rgba(255, 255, 255, 0.15) 0px 0px 3px 1px')
                     
                 }}
-                className={classNames(
-                  "h-16 px-5 bg-black text-[#f7f9f9] font-bold border border-white/10 rounded",
+                className={classNames("h-16  pr-3 pl-2 bg-black text-[#f7f9f9] font-bold border border-white/10 rounded group flex items-center gap-1.5",
                   {
-                    "!border-[color:var(--color-primary)]":
+                    "!border-[color:var(--color-primary)] !border-2 ":
                       backgraundColor.name === "darker",
                   },
                 )}
               >
+                <div className="w-10 h-10 rounded-full flex-shrink-0 group-hover:bg-white/20">
+                  <div className="w-5 h-5 rounded-full border-2 border-[#3e4144] flex items-center justify-center "></div>
+                </div>
                 Işıklar kapalı
               </button>
             </div>
