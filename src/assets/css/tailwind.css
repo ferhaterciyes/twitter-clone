@@ -1,12 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
 body {
-  @apply bg-[color:var(--backgraund-primary)] text-white text-[15px] ;
+    @apply bg-[color:var(--backgraund-primary)] text-[color:var(--color-base)] ;
+  
 }
-/* 
-sol sidebar  = 275px ;
-sağ sidebar = 350px ; 
-content alanı = auto ;
-genişlik  =1265 px
-*/
+.shadow-box{
+    box-shadow: var(--box-shadow);
+}
+
+/*
+    genislik = 1265px
+    sol sidebar = 275px
+    sag sidebar = 350px
+    content alani = auto
+ */

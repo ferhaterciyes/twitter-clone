@@ -16,7 +16,7 @@ const account = useAccount()
           {({ isActive }) => (
             <div
               className={classNames(
-                "p-3 rounded-full transition-colors inline-flex items-center gap-5 group-hover:bg-[#eff3f41a]",
+                "p-3 rounded-full transition-colors inline-flex items-center gap-5 group-hover:bg-[color:var(--backgraund-third)]",
                 {
                   "font-bold": isActive,
                 },
@@ -24,7 +24,7 @@ const account = useAccount()
             >
               <div className="w-[26.25px] h-[26.25px] relative">
                 {menu?.notification && (
-                  <span className="w-[18px] h-[18px] rounded-full bg-[#1d9bf0] absolute -top-1.5 -right-1 flex items-center justify-center text-[11px]">
+                  <span className="w-[18px] h-[18px] rounded-full bg-[color:var(--color-primary)] text-[color:var(--backgraund-primary)] border border-[color:var(--backgraund-primary)] absolute -top-1.5 -right-1 flex items-center justify-center text-[11px]">
                     {menu.notification}
                   </span>
                 )}

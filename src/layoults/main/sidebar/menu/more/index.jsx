@@ -4,27 +4,24 @@ import { Link } from "react-router-dom";
 import { setModal } from "../../../../../store/modal/actions";
 const More = () => {
   return (
-    <Popover className="relative">
-      <Popover.Button className="py-[3px] block group outline-none">
-        <div className="p-3 rounded-full transition-colors inline-flex items-center gap-5 group-hover:bg-[#eff3f41a]">
+    <Popover className="relative ">
+      <Popover.Button className="py-[3px] block group outline-none ">
+        <div className="p-3 rounded-full transition-colors inline-flex items-center gap-5 group-hover:bg-[color:var(--backgraund-third)]">
           <div className="w-[26.25px] h-[26.25px] relative">
-            <svg
-              viewBox="0 0 24 24"
-              width={26.25}
-              height={26.25}
-              className="block"
-            >
-              <path
-                fill="#e7e9ea"
-                d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z"
-              />
-            </svg>
+          <svg viewBox="0 0 24 24" className="h-[1.641rem]">
+							<path
+								fill="currentColor"
+								d="M3.75 12c0-4.56 3.69-8.25 8.25-8.25s8.25 3.69 8.25 8.25-3.69 8.25-8.25 8.25S3.75 16.56 3.75 12zM12 1.75C6.34 1.75 1.75 6.34 1.75 12S6.34 22.25 12 22.25 22.25 17.66 22.25 12 17.66 1.75 12 1.75zm-4.75 11.5c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25S6 11.31 6 12s.56 1.25 1.25 1.25zm9.5 0c.69 0 1.25-.56 1.25-1.25s-.56-1.25-1.25-1.25-1.25.56-1.25 1.25.56 1.25 1.25 1.25zM13.25 12c0 .69-.56 1.25-1.25 1.25s-1.25-.56-1.25-1.25.56-1.25 1.25-1.25 1.25.56 1.25 1.25z"
+							/>
+						</svg>
           </div>
-          <div className="pr-4 text-xl">Daha Fazla</div>
+          <div className="pr-4 text-xl">
+            Daha Fazla
+            </div>
         </div>
       </Popover.Button>
-      <Popover.Panel className="w-[318px] absolute bottom-0 left-0 bg-black shadow-box rounded-xl overflow-hidden">
-        <button className="p-3 h-14 w-full  transition-colors inline-flex items-center gap-5 hover:bg-[#eff3f41a]">
+      <Popover.Panel className="w-[318px] absolute bottom-0 left-0 bg-[color:var(--backgraund-primary)] shadow-box rounded-xl overflow-hidden">
+        <button className="p-3 h-14 w-full  transition-colors inline-flex items-center gap-5 hover:bg-[color:var(--backgraund-secondary)]">
           <div className="w-[26.25px] h-[26.25px] relative">
             <svg
               viewBox="0 0 24 24"
@@ -33,14 +30,14 @@ const More = () => {
               className="block"
             >
               <path
-                fill="#e7e9ea"
+                fill="currentColor"
                 d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"
               />
             </svg>
           </div>
           <div className="pr-4 text-xl font-bold">Yer İşaretleri</div>
         </button>
-        <button className="px-4 h-14 w-full  transition-colors inline-flex items-center gap-5 hover:bg-[#eff3f41a]">
+        <button className="px-4 h-14 w-full  transition-colors inline-flex items-center gap-5 hover:bg-[color:var(--backgraund-secondary)]">
           <div className="w-[26.25px] h-[26.25px] relative">
             <svg
               viewBox="0 0 24 24"
@@ -49,21 +46,21 @@ const More = () => {
               className="block"
             >
               <path
-                fill="#e7e9ea"
+                fill="currentColor"
                 d="M23 3v14h-2V5H5V3h18zM10 17c1.1 0 2-1.34 2-3s-.9-3-2-3-2 1.34-2 3 .9 3 2 3zM1 7h18v14H1V7zm16 10c-1.1 0-2 .9-2 2h2v-2zm-2-8c0 1.1.9 2 2 2V9h-2zM3 11c1.1 0 2-.9 2-2H3v2zm0 4c2.21 0 4 1.79 4 4h6c0-2.21 1.79-4 4-4v-2c-2.21 0-4-1.79-4-4H7c0 2.21-1.79 4-4 4v2zm0 4h2c0-1.1-.9-2-2-2v2z"
               />
             </svg>
           </div>
           <div className="pr-4 text-xl font-bold">Para kazanma</div>
         </button>
-        <div className="h-px bg-[#2f3336] my-0.5 w-[89%] mx-auto"  />
+        <div className="h-px bg-[color:var(--backgraund-third)] my-0.5 w-[89%] mx-auto"  />
         <Disclosure>
           {({open})=> (
            <>
-                 <Disclosure.Button className="h-[52px] flex items-center justify-between w-full px-4 font-bold hover:bg-[#eff3f41a] transition-colors">
+                 <Disclosure.Button className="h-[52px] flex items-center justify-between w-full px-4 font-bold hover:bg-[color:var(--backgraund-secondary)] transition-colors">
                  İçerik Üretici Stüdyosu 
                  <svg className={classNames({
-                  "rotate-180 text-[#1d9bf0]":open
+                  "rotate-180 text-[color:var(--color-primary)]":open
                  })} viewBox="0 0 24 24 " width={18.75} height={18.75} >
                    <path
                      fill="currentColor"
@@ -71,10 +68,10 @@ const More = () => {
                    />
                  </svg>
                </Disclosure.Button>
-               <Disclosure.Panel className="text-gray-500">
+               <Disclosure.Panel >
                  <Link
                    to={"/"}
-                   className="flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[#eff3f41a] text-white transition-colors"
+                   className="flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[color:var(--backgraund-secondary)]  transition-colors"
                  >
                    <svg viewBox="0 0 24 24 " width={18.75} height={18.75}>
                      <path
@@ -92,10 +89,10 @@ const More = () => {
         <Disclosure>
           {({open})=>(
                <>
-               <Disclosure.Button className="h-[52px] flex items-center justify-between w-full px-4 font-bold hover:bg-[#eff3f41a] transition-colors">
+               <Disclosure.Button className="h-[52px] flex items-center justify-between w-full px-4 font-bold hover:bg-[color:var(--backgraund-secondary)] transition-colors">
             Profesyonel Araçlar
             <svg  className={classNames({
-                  "rotate-180 text-[#1d9bf0]":open
+                  "rotate-180 text-[color:var(--color-primary)]":open
                  })} viewBox="0 0 24 24 " width={18.75} height={18.75}>
               <path
                 fill="currentColor"
@@ -103,10 +100,10 @@ const More = () => {
               />
             </svg>
           </Disclosure.Button>
-          <Disclosure.Panel className="text-gray-500">
+          <Disclosure.Panel>
             <Link
               to={"/"}
-              className="flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[#eff3f41a] text-white transition-colors"
+              className="flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[color:var(--backgraund-secondary)] transition-colors"
             >
               <svg viewBox="0 0 24 24 " width={18.75} height={18.75}>
                 <path
@@ -126,7 +123,7 @@ const More = () => {
      <Disclosure.Button className="h-[52px] flex items-center justify-between w-full px-4 font-bold hover:bg-[#eff3f41a] transition-colors">
             Ayarlar ve Destek
             <svg className={classNames({
-                  "rotate-180 text-[#1d9bf0]":open
+                  "rotate-180 text-[color:var(--color-primary)]":open
                  })} viewBox="0 0 24 24 " width={18.75} height={18.75}>
               <path
                 fill="currentColor"
@@ -134,10 +131,10 @@ const More = () => {
               />
             </svg>
           </Disclosure.Button>
-          <Disclosure.Panel className="text-gray-500">
+          <Disclosure.Panel>
             <Link
               to={"/"}
-              className="flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[#eff3f41a] text-white transition-colors"
+              className="flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[#eff3f41a] transition-colors"
             >
               <svg viewBox="0 0 24 24 " width={18.75} height={18.75}>
                 <path
@@ -149,7 +146,7 @@ const More = () => {
             </Link>
             <Link
               to={"/"}
-              className="flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[#eff3f41a] text-white transition-colors"
+              className="flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[#eff3f41a]transition-colors"
             >
               <svg viewBox="0 0 24 24 " width={18.75} height={18.75}>
                 <path
@@ -161,7 +158,7 @@ const More = () => {
             </Link>
             <button 
               onClick={()=>setModal("appearance")}
-              className="flex items-center px-3 h-11 gap-3 w-full text-[15px] font-medium hover:bg-[#eff3f41a] text-white transition-colors"
+              className="flex items-center px-3 h-11 gap-3 w-full text-[15px] font-medium hover:bg-[#eff3f41a]  transition-colors"
             >
               <svg viewBox="0 0 24 24 " width={18.75} height={18.75}>
                 <path
@@ -173,7 +170,7 @@ const More = () => {
             </button>
             <Link
               to={"/"}
-              className="flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[#eff3f41a] text-white transition-colors"
+              className="flex items-center px-3 h-11 gap-3 text-[15px] font-medium hover:bg-[#eff3f41a]transition-colors"
             >
               <svg viewBox="0 0 24 24 " width={18.75} height={18.75}>
                 <path

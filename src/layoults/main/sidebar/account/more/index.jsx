@@ -43,13 +43,13 @@ const More = ({close}) => {
         </button>
       ))}
       <div className="h-px bg-[#2f3336] my-3 "/>
-      <button className="py-3 px-4 text-left hover:bg-[#eff3f41a] w-full transition-colors text-[#e7e9ea] text-[15px] font-bold leading-[20px]">
+      <button className="py-3 px-4 text-left hover:bg-[#eff3f41a] w-full transition-colors  text-[15px] font-bold leading-[20px]">
         Var olan bir hesap ekle
       </button>
-      <button className="py-3 px-4 text-left hover:bg-[#eff3f41a] w-full transition-colors text-[#e7e9ea] text-[15px] font-bold leading-[20px]">
+      <button className="py-3 px-4 text-left hover:bg-[#eff3f41a] w-full transition-colors  text-[15px] font-bold leading-[20px]">
         Hesapları Yönet
       </button>
-      <button className="py-3 px-4 text-left hover:bg-[#eff3f41a] w-full transition-colors text-[#e7e9ea] text-[15px] font-bold leading-[20px]">
+      <button className="py-3 px-4 text-left hover:bg-[#eff3f41a] w-full transition-colors text-[15px] font-bold leading-[20px]">
         @hesabından çıkış yap
       </button>
     </div>
