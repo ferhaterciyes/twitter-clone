@@ -269,7 +269,7 @@ export const topics = [
 export const colors = [
   {
     primary: "#1d9bf0",
-    secondary: "8ecdf8",
+    secondary: "#8ecdf8",
   },
   {
     primary: "#ffd400",
@@ -292,3 +292,12 @@ export const colors = [
     secondary: "#80ddbe",
   },
 ];
+
+export const fontSizes =[
+  14,
+  15,
+  16,
+  18,
+  19
+
+]
