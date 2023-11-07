@@ -12,7 +12,7 @@ const Buttons = ({ as, children, size,className, variant , ...props }) => {
         {
           "px-4 h-8 text-sm": size === "small",
           "px-4 h-9": size === "normal",
-          "px-4 h-[52px] w-full text-[17px]": size === "large",
+          "px-4 text-[1.063rem] h-[3.25rem] w-full": size === 'large',
           " bg-[color:var(--color-primary)] text-white hover:opacity-90": variant === "primary",
           " bg-[#eff3f4] hover:bg-[#d7dbdc] text-black": variant === "white",
           " border border-[#b4b4b4] hover:border-[#67070f] hover:bg-[#f4212e1a] hover:text-[#f4212e] ": variant === "white-outline",

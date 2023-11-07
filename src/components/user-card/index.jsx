@@ -1,49 +1,48 @@
-import { useState } from "react"
-import Buttons from "../button"
-const UserCard = ({user}) => {
-
-    const [following,setFollowing]=useState(false)
-
-
+import { useState } from "react";
+import Buttons from "../button";
+const UserCard = ({ user }) => {
+  const [following, setFollowing] = useState(false);
 
   return (
-    <button
-    className="py-3 px-4 flex gap-3 transition-colors hover:bg-white/[0.03]">
+    <button className="py-3 px-4 flex gap-3 transition-colors hover:bg-[color:var(--backgraund-third)]">
 
-    <img
-      src={user.avatar}
-      className="w-10 h-10 rounded-full object-cover"
-    />
-    <div className="flex-1 max-w-full flex flex-col text-left ">
-      <div className="text-[15px]  leading-5 font-bold flex items-center ">
-        {user.fullName}
-  
+      <div className="flex-1 flex gap-3">
+        <img
+          src={user.avatar}
+          className="w-10 h-10 rounded-full object-cover"
+          alt=""
+        />
+        <div className="w-[calc(100%-3.25rem)] text-left">
+          <div className="leading-5 font-bold truncate">{user.fullName}</div>
+          <div className="text-[color:var(--color-base-secondary)] truncate">
+            @{user.username}
+          </div>
+        </div>
       </div>
-      <div className="text-[15px] text-[color:var(--color-base-secondary)] ">@{user.username}</div>
-    </div>
-    {following ? (  
-           <Buttons size="small"
-           onClick={()=>setFollowing(false)}
-            variant="white-outline" 
-            className="whitespace-nowrap group">
-           <div className="flex group-hover:hidden">Takip ediliyor</div>
-           <div className="hidden group-hover:flex">Takibi bırak</div>
-
-         </Buttons>
+      {following ? (
+        <Buttons
+          size="small"
+          onClick={() => setFollowing(false)}
+          variant="white-outline"
+          className="whitespace-nowrap group"
+        >
+          <div className="flex group-hover:hidden">Takip ediliyor</div>
+          <div className="hidden group-hover:flex">Takibi bırak</div>
+        </Buttons>
       ) : (
-        <Buttons size="small" variant="white" onClick={()=>setFollowing(true)}>
-        Takip et
-      </Buttons>
-
+        <Buttons
+          size="small"
+          variant="white"
+          onClick={() => setFollowing(true)}
+        >
+          Takip et
+        </Buttons>
       )}
- 
-  </button>
-  )
-}
+    </button>
+  );
+};
 
-export default UserCard
-
-
+export default UserCard;
 
 /* 
 
