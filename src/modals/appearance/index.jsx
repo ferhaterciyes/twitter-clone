@@ -12,13 +12,19 @@ import { colors, fontSizes } from "../../utils/consts";
 import { useEffect, useState } from "react";
 
 const AppearanceModal = ({ close }) => {
-  const { backgraundColor, color ,fontSize } = useAppearance();
+  const { backgraundColor, color, fontSize } = useAppearance();
 
-  const [fontSizePercent, setFontSizePercent] = useState(0)
+  const [fontSizePercent, setFontSizePercent] = useState(0);
 
-  useEffect(()=>{
-    setTimeout(()=>     setFontSizePercent( document.querySelector(".active-font-size").offsetLeft + 3),1 )
-  },[fontSize])
+  useEffect(() => {
+    setTimeout(
+      () =>
+        setFontSizePercent(
+          document.querySelector(".active-font-size").offsetLeft + 3,
+        ),
+      1,
+    );
+  }, [fontSize]);
 
   return (
     <div className="w-[600px]">
@@ -77,24 +83,38 @@ const AppearanceModal = ({ close }) => {
                 <div className="bg-[color:var(--backgraund-secondary)] p-4 gap-5 rounded-2xl flex items-center">
                   <div className="text-[0.813rem]">Aa</div>
                   <div className="h-1 bg-[color:var(--color-secondary)] flex-1  rounded-full relative">
-                    <div style={{width:fontSizePercent}} className="absolute h-full top-0 left-0 rounded-full bg-[color:var(--color-primary)]" />
-                   <div  className="flex h-full justify-between absolute w-[calc(100%+16px)]  -top-3.5 -left-[8px] ">
-                   {fontSizes.map(fs  => (
-                      <button key={fs}
-                      type="button"
-                      onClick={(e)=>{
-                        setFontSize(fs)
-                      }}
-                      className={classNames("before:absolute before:inset-0 before:rounded-full before:hover:hover:bg-[color:var(--color-primary)] before:opacity-10 w-8 h-8 rounded-full flex items-center justify-center relative ",{
-                          "active-font-size" : fs === fontSize
-                      })}>
-                        <div className={classNames("w-3 h-3 rounded-full bg-[color:var(--color-secondary)]",{
-                          "w-4 h-4" : fs === fontSize,
-                          "!bg-[color:var(--color-primary)]" : fontSize >= fs
-                        })} />
-                      </button>
-                    ))}
-                   </div>
+                    <div
+                      style={{ width: fontSizePercent }}
+                      className="absolute h-full top-0 left-0 rounded-full bg-[color:var(--color-primary)]"
+                    />
+                    <div className="flex h-full justify-between absolute w-[calc(100%+16px)]  -top-3.5 -left-[8px] ">
+                      {fontSizes.map((fs) => (
+                        <button
+                          key={fs}
+                          type="button"
+                          onClick={(e) => {
+                            setFontSize(fs);
+                          }}
+                          className={classNames(
+                            "before:absolute before:inset-0 before:rounded-full before:hover:hover:bg-[color:var(--color-primary)] before:opacity-10 w-8 h-8 rounded-full flex items-center justify-center relative ",
+                            {
+                              "active-font-size": fs === fontSize,
+                            },
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              "w-3 h-3 rounded-full bg-[color:var(--color-secondary)]",
+                              {
+                                "w-4 h-4": fs === fontSize,
+                                "!bg-[color:var(--color-primary)]":
+                                  fontSize >= fs,
+                              },
+                            )}
+                          />
+                        </button>
+                      ))}
+                    </div>
                   </div>
                   <div className="text-[1.25rem]">aA</div>
                 </div>
@@ -146,6 +166,7 @@ const AppearanceModal = ({ close }) => {
                       setBackgraundColor({
                         name: "light",
                         primary: "#ffffff",
+                        primaryAlpha: "ffffffa6",
                         secondary: "#f7f9f9",
                         third: "#eff3f4",
                         modal: "#00000066",
@@ -195,6 +216,7 @@ const AppearanceModal = ({ close }) => {
                         setBackgraundColor({
                           name: "dark",
                           primary: "#15202b",
+                          primaryAlpha: "15202ba6",
                           secondary: "#1e2732",
                           third: "#263340",
                           modal: "#5b708366",
@@ -244,6 +266,7 @@ const AppearanceModal = ({ close }) => {
                         setBackgraundColor({
                           name: "darker",
                           primary: "#000",
+                          primaryAlpha: "000000a6",
                           secondary: "#16181c",
                           third: "#212327",
                           modal: "#5b708366",

@@ -13,6 +13,8 @@ const MainLayout = () => {
 
 useEffect(()=>{
 document.documentElement.style.setProperty("--backgraund-primary", appearance.backgraundColor.primary);
+document.documentElement.style.setProperty("--backgraund-primary-alpha", appearance.backgraundColor.primaryAlpha);
+
 document.documentElement.style.setProperty("--backgraund-secondary",appearance.backgraundColor.secondary)
 document.documentElement.style.setProperty("--backgraund-third",appearance.backgraundColor.third)
 document.documentElement.style.setProperty("--backgraund-modal",appearance.backgraundColor.modal)

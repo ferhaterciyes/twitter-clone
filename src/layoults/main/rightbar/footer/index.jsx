@@ -36,7 +36,7 @@ const Footer = () => {
           </Popover.Panel>
         </Popover>
         <p className="text-[color:var(--color-base-secondary)] leading-4">
-					&copy; 2023 Ferhat Prototürk aygılarımla..
+					&copy; 2023 Ferhat Prototürk saygılarımla..
 				</p>
 			</div>
 
