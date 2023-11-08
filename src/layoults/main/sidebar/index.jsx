@@ -4,7 +4,7 @@ import Account from "./account"
 Logo
 const Sidebar = () => {
   return (
-    <aside className="w-[275px] min-h-screen max-h-screen px-2 flex flex-col sticky top-0">
+    <aside className="w-[275px] min-h-screen max-h-screen px-2 flex flex-col z-[2] sticky top-0">
      <Logo />
      <Menu />
      <Account />

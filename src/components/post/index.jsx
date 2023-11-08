@@ -1,4 +1,7 @@
 import { numberFormat } from "./../../utils/formats";
+import Photo from "./photo";
+import Poll from "./poll";
+import { posts } from './../../mock/posts';
 
 const Post = ({ post }) => {
   return (
@@ -35,6 +38,10 @@ const Post = ({ post }) => {
               __html: post.content.replace(/\n/g, "<br>"),
             }}
           />
+          {post.type === "photo"  && <Photo photos ={post.photos} />}
+
+          {post.type === "poll" && <Poll poll={post.poll} />}
+
 
           <div className="flex -ml-1.5 mt-1.5">
             <div className="flex-1 group flex items-center gap-px">

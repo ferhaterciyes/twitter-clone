@@ -106,7 +106,7 @@ And people have been busy executing god-like tasks.
 		photos: [
 			'https://pbs.twimg.com/media/F7bpqaKXkAAopDd?format=jpg&name=900x900',
 			'https://pbs.twimg.com/media/F7bptMoXYAA7TpB?format=jpg&name=900x900',
-			'https://pbs.twimg.com/media/F8tfk2JWwAAlY3f?format=jpg&name=large'
+			'https://pbs.twimg.com/media/F-XH4M3awAA3gUB?format=jpg&name=large'
 		],
 		account: {
 			avatar: 'https://pbs.twimg.com/profile_images/1707827931895017472/1-bUbTT3_400x400.jpg',
@@ -131,10 +131,10 @@ This prompt is going viral- mimicking a creepy iPhone capture that looks insanel
 
 Prompt in ALT tag + more examples in thread:`,
 		photos: [
-			'https://pbs.twimg.com/media/F7aKxHhaAAAnHlS?format=jpg&name=large',
-			'https://pbs.twimg.com/media/F7VBIvaW0AAyXEr?format=jpg&name=large',
-			'https://pbs.twimg.com/media/F7VBIvaWAAAWUsx?format=jpg&name=large',
-			'https://pbs.twimg.com/media/F7VBIvaWAAAWUsx?format=jpg&name=large',
+			'https://pbs.twimg.com/media/F-ZN8wjXEAAxECv?format=jpg&name=900x900',
+			'https://pbs.twimg.com/media/F-ZN8wiWAAA6Dkf?format=jpg&name=medium',
+			'https://pbs.twimg.com/media/F-ZN8wiXUAAydKl?format=jpg&name=900x900',
+			'https://pbs.twimg.com/media/F-ZN8whWYAAOAOW?format=jpg&name=medium',
 		],
 		account: {
 			avatar: 'https://pbs.twimg.com/profile_images/1617700070710992896/pF3T_gMB_400x400.jpg',
