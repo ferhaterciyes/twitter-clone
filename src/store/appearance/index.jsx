@@ -3,8 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   backgraundColor: {
     name:"darker",
-    primary: "#000",
-    primaryAlpha: "000000a6",
+    primary: "#000000",
     secondary: "#16181c",
     third: "#212327",
     modal: "#5b708366",
@@ -13,7 +12,7 @@ const initialState = {
     primary: "#1d9bf0",
     secondary: "#8ecdf8",
     base: "#e7e9ea",
-    baseSecondary: "71767b",
+    baseSecondary: "#71767b",
   },
   boxShadow:
     "rgba(255,255,255,0.2) 0px 0px 15px , rgba(255,255,255,0.15) 0px 0px 3px 1px",

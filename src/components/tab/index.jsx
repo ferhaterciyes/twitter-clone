@@ -38,7 +38,7 @@ Tab.Items = Items;
 Tab.Item = Item;
 Tab.Content = Content;
 
-Tab.propTypes = {
+Tab.PropTypes = {
   children: PropTypes.arrayOf(PropTypes.node),
   activeTab: string.isRequired,
 };
