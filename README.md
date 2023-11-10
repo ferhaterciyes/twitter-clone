@@ -6,12 +6,10 @@ This project is a Twitter clone built using React and Firebase.
 
 The project provides social media functionalities similar to Twitter, allowing users to post tweets, like, and follow others through a Twitter-like interface.
 
-## Features
+## Gif
+![twitter clone Uygulaması](ekranGifi.gif)
 
-- 
--
-- 
-- 
+
 
 ## Canlıya Alma (Hosting)
 

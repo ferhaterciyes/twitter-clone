@@ -6,12 +6,11 @@
     font-size: var(--font-size);
 }
 
-
 body {
     @apply bg-[color:var(--backgraund-primary)] text-[color:var(--color-base)] text-[0.938rem];
-  
 }
-.shadow-box{
+
+.shadow-box {
     box-shadow: var(--box-shadow);
 }
 
